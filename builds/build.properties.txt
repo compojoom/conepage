@@ -1,0 +1,12 @@
+build.version=dev
+component.name=execsql
+component.uppperName=EXECSQL
+modules=
+modules_admin=∂
+; FTP Options
+ftp.host=example.com
+ftp.port=21
+ftp.username=
+ftp.password=
+ftp.dir=
+ftp.mode=binary

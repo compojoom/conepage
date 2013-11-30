@@ -1,0 +1,5 @@
+/builds/build.properties
+/.idea
+/packages
+/tx.exe
+.DS_Store

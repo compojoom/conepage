@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_CONEPAGE</name>
+	<creationDate>@@DATE@@</creationDate>
+	<author>Yves Hoppe - Compojoom.com</author>
+	<copyright>(C) 2013 - 2014 Yves Hoppe - Compojoom.com</copyright>
+	<description><![CDATA[COnePage by Compojoom.com]]>
+	</description>
+	<license>http://www.gnu.org/licenses/gpl.html</license>
+
+	<authorEmail>yves@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>@@VERSION@@</version>
+	<scriptfile>script.php</scriptfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+		</sql>
+	</install>
+	<files folder="components/com_@@COMPONENTNAME@@">
+		##FRONTENDCOMPONENTPACKAGEFILES##
+	</files>
+	<languages folder="language">
+		##FRONTENDLANGUAGEFILES##
+	</languages>
+	<administration>
+		<menu img="../media/com_conepage/backend/images/icon-16.png">COM_CONEPAGE</menu>
+		<submenu>
+			<!--<menu img="../media/com_conepage/backend/images/exec-16.png" view="exec">COM_CONEPAGE_EXEC</menu>
+			<menu img="../media/com_conepage/backend/images/config-16.png" view="settings">CONFIGURATION</menu>-->
+			<menu img="../media/com_conepage/backend/images/informations-16.png" view="information">COM_CONEPAGE_INFORMATIONS</menu>
+			<!--<menu img="../media/com_conepage/backend/images/live-update-16.png" view="liveupdate">LIVEUPDATE</menu>-->
+		</submenu>
+		<files folder="administrator/components/com_@@COMPONENTNAME@@">
+			##ADMINCOMPONENTPACKAGEFILES##
+		</files>
+		<languages folder="administrator/language">
+			##ADMINLANGUAGEFILES##
+		</languages>
+	</administration>
+	<media destination="com_@@COMPONENTNAME@@" folder="media/com_@@COMPONENTNAME@@">
+		##MEDIAPACKAGEFILES##
+	</media>
+</extension>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_CONEPAGE</name>
+	<creationDate>2013-11-30</creationDate>
+	<author>Yves Hoppe - Compojoom.com</author>
+	<copyright>(C) 2013 - 2014 Yves Hoppe - Compojoom.com</copyright>
+	<description><![CDATA[COnePage by Compojoom.com]]>
+	</description>
+	<license>http://www.gnu.org/licenses/gpl.html</license>
+
+	<authorEmail>yves@compojoom.com</authorEmail>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>1.0.0</version>
+	<scriptfile>script.php</scriptfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+		</sql>
+	</install>
+	<files folder="components/com_conepage">
+		
+	</files>
+	<languages folder="language">
+		
+	</languages>
+	<administration>
+		<menu img="../media/com_conepage/backend/images/icon-16.png">COM_CONEPAGE</menu>
+		<submenu>
+			<!--<menu img="../media/com_conepage/backend/images/exec-16.png" view="exec">COM_CONEPAGE_EXEC</menu>
+			<menu img="../media/com_conepage/backend/images/config-16.png" view="settings">CONFIGURATION</menu>-->
+			<menu img="../media/com_conepage/backend/images/informations-16.png" view="information">COM_CONEPAGE_INFORMATIONS</menu>
+			<!--<menu img="../media/com_conepage/backend/images/live-update-16.png" view="liveupdate">LIVEUPDATE</menu>-->
+		</submenu>
+		<files folder="administrator/components/com_conepage">
+			<file>access.xml</file>
+<file>conepage.php</file>
+<file>conepage.xml</file>
+<file>config.xml</file>
+<folder>controlcenter</folder>
+<file>controller.php</file>
+<folder>controllers</folder>
+<folder>help</folder>
+<folder>helpers</folder>
+<folder>liveupdate</folder>
+<folder>models</folder>
+<file>script.php</file>
+<folder>sql</folder>
+<folder>tables</folder>
+<file>toolbar.conepage.php</file>
+<folder>views</folder>
+		</files>
+		<languages folder="administrator/language">
+			<language tag="en-GB">en-GB/en-GB.com_conepage.ini</language>
+<language tag="en-GB">en-GB/en-GB.com_conepage.sys.ini</language>
+		</languages>
+	</administration>
+	<media destination="com_conepage" folder="media/com_conepage">
+		<folder>backend</folder>
+<folder>css</folder>
+<folder>js</folder>
+	</media>
+</extension>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- joomla 1.6 -->
+	<fieldset name="backend" label="COM_CONEPAGE_CONFIG_BACKEND_HEADER_LABEL"
+	          description="COM_CONEPAGE_CONFIG_LIVE_UPDATE_HEADER_DESC">
+		<field
+				name="api_key"
+				type="text" default=""
+				label="COM_CONEPAGE_API_KEY"
+				description="COM_CONEPAGE_API_KEY_DESC"
+				size="60"
+				required="true"
+				/>
+	</fieldset>
+	<fieldset
+			name="permissions"
+			label="COM_CONEPAGE_PERMISSIONS_LABEL"
+			description="COM_CONEPAGE_PERMISSIONS_DESC"
+			>
+
+		<field
+				name="rules"
+				type="rules"
+				label="COM_CONEPAGE_PERMISSIONS_FRONTEND"
+				class="inputbox"
+				validate="rules"
+				filter="rules"
+				component="com_conepage"
+				section="frontend"/>
+	</fieldset>
+</config>
