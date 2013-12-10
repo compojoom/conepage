@@ -39,6 +39,7 @@ class Com_COnePageInstallerScript extends CompojoomInstaller
 			)
 		),
 		'plugins' => array(
+			'plg_content_creplacements' => 1,
 		),
 	);
 

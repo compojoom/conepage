@@ -15,7 +15,7 @@ jimport('joomla.event.plugin');
 
 if (!defined('CDEBUG'))
 {
-	define('CDEBUG', true);
+	define('CDEBUG', false);
 }
 
 /**
