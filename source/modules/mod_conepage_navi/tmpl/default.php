@@ -24,8 +24,8 @@ $doc->addScriptDeclaration('
 	});
 ');
 ?>
-<div id="conepage_navi_<?php echo $module->id; ?>" class="conepage_navi_holder" role="navigation">
-	<ul id="conepage_navi_ul_<?php echo $module->id; ?>" class="conepage_navi_ul nav nav-list about-list hidden-phone hidden-tablet" >
+<div id="conepage_navi_<?php echo $module->id; ?>" class="conepage_navi_holder hidden-phone hidden-tablet" role="navigation">
+	<ul id="conepage_navi_ul_<?php echo $module->id; ?>" class="conepage_navi_ul nav nav-list about-list" >
 
 	</ul>
 	<div style="clear:both"></div>
