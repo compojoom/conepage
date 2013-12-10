@@ -42,7 +42,7 @@
 
                     holder.container.append('<li class="cop_navi_element">'
                         + '<a id="scroll_' + sid + '" href="#' + sid + '" title="' + stitle + '" class="cop_navi_link '
-                        + 'hasTooltip" data-placement="right" title="' + stitle + '">'
+                        + '" data-toggle="tooltip" data-placement="right" title="' + stitle + '">'
                         + '<img src="' + settings.imgpath + sicon + '" alt="' + stitle + '" />'
                         + '</a>'
                         + '</li>'
@@ -59,6 +59,18 @@
                 });
 
                 holder.sections.first().css("border", "0");
+
+                // Init all other links with class scrlsmooth
+
+                $(".scrlsmooth").click(function(){
+                    var ele = $(this);
+                    var target = ele.attr("href");
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top
+                    }, 1200);
+                    return false;
+                });
+
                 return true;
             }
         });
@@ -71,7 +83,7 @@
             var success = API.init();
             holder.log('-- Init Status:  '  + success + ' --');
 
-            $('body, html').scrollspy({offset: 400, target: '.conepage_navi_holder'});
+            $('body, html').scrollspy({offset: 350, target: '.conepage_navi_holder'});
 
             var origOffsetY = holder.container.offset().top;
 

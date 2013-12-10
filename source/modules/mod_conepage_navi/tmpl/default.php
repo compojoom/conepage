@@ -15,9 +15,6 @@ $doc = JFactory::getDocument();
 
 JHTML::_('stylesheet', 'media/mod_conepage_navi/css/navi.css');
 JHTML::_('script', 'media/mod_conepage_navi/js/jquery.copnavi.js');
-JHTML::_('script', 'templates/protostar/js/template.js');
-
-JHTML::_('bootstrap.tooltip');
 
 $doc->addScriptDeclaration('
 	jQuery( document ).ready(function() {
