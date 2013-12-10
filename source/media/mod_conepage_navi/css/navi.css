@@ -8,10 +8,9 @@
     top: 540px;
     background: #F1F1F1;
     border: 1px solid #999999;
-    border-radius: 5px;
-    -moz-box-shadow: 3px 2px 2px #888;
-    -webkit-box-shadow: 3px 2px 2px #888;
-    box-shadow: 3px 2px 2px #888;
+    -moz-box-shadow: 1px 2px 2px #888;
+    -webkit-box-shadow: 1px 2px 2px #888;
+    box-shadow: 1px 2px 2px #888;
     overflow: hidden;
 }
 
@@ -85,5 +84,5 @@ img {
 
 .sticky {
     position: fixed;
-    top: 48px;
+    top: 68px;
 }

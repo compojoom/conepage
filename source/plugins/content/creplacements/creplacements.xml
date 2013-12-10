@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>@@PLUGINNAME@@</name>
+	<author>compojoom.com</author>
+	<creationDate>@@DATE@@</creationDate>
+	<copyright>Copyright (C) 2013 - 2014 Yves Hoppe - compojoom.com. All rights reserved.</copyright>
+	<license>GNU/GPL http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorUrl>https://compojoom.com</authorUrl>
+	<version>@@VERSION@@</version>
+	<description>CReplacement ist a simple plugin for replacing a key with a value</description>
+	<files>
+		<filename plugin="creplacements">creplacements.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="administrator/language">
+		##ADMINLANGUAGEFILES##
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="replaces" type="textarea"
+				       default="{}"
+				       label="Replaces"
+				       rows="15"
+					/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

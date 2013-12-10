@@ -7,7 +7,7 @@
 (function( $ ) {
 
     var version = "20131130";
-    var debug = 1;
+    var debug = 0;
 
     $.fn.copnavi = function( options ) {
 
@@ -89,7 +89,7 @@
 
             //alert("off: " + origOffsetY);
             $(window).scroll(function(e){
-                window.scrollY >= origOffsetY - 48 ? holder.divholder.addClass('sticky') :
+                window.scrollY >= origOffsetY - 68 ? holder.divholder.addClass('sticky') :
                     holder.divholder.removeClass('sticky');
             });
 
