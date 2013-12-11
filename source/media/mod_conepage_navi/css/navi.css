@@ -1,6 +1,7 @@
 /* COnePage Navi Module CSS */
 
 .conepage_navi_holder {
+    display: none;
     position: absolute;
     width: 52px;
     min-height: 100px;
@@ -85,4 +86,11 @@ img {
 .sticky {
     position: fixed;
     top: 68px;
+}
+
+/* Large desktop */
+@media (min-width: 1318px) {
+    .conepage_navi_holder {
+        display: block !important;
+    }
 }
