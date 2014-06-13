@@ -13,8 +13,6 @@ defined('_JEXEC') or die;
 
 jimport('joomla.application.component.model');
 
-JTable::addIncludePath(JPATH_ADMINISTRATOR . '/components/com_cadvancedslideshow/tables');
-
 JLoader::register('COnePageHelperSettings', JPATH_ADMINISTRATOR . '/components/com_conepage/helpers/settings.php');
 JLoader::register('COnePageHelperBasic', JPATH_ADMINISTRATOR . '/components/com_conepage/helpers/basic.php');
 
